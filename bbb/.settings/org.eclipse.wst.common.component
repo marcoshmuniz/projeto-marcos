@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="bbb">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/java/main/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/java/main/test"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/java/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/java/main/log"/>
+        <property name="context-root" value="bbb"/>
+        <property name="java-output-path" value="/bbb/build/classes"/>
+    </wb-module>
+</project-modules>

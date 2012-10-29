@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>jQuery Starterkit</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+<script src="../../jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+    $('#json').click(function(){ 
+        alert('json');
+         $.getJSON("http://localhost:8080/bbb/rest/todos",
+         function(data) {
+            alert(data);         
+          });   
+    });
+
+    $('#ajax').click(function(){ 
+        alert('ajax');
+         $.ajax({ 
+             type: "GET",
+             dataType: "json",
+             url: "http://localhost:8080/bbb/rest/todos",
+             success: function(data){        
+                alert(data);
+             }
+         });
+    });
+
+</script>
+</head>
+<body>
+<button id="ajax">ajax call</button>
+<button id="json">json</button>
+
+
+</body>
+</html>
